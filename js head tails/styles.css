@@ -1,0 +1,41 @@
+.toggle {
+  background: url("images/headsp.png");
+height: 10em;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100px;
+}
+
+
+.toggle.tails {
+  background-image: url("images/tailsp.png");
+  height: 10em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+
+}
+/*animation begin*/
+.animate {
+  animation: rotation .15s 5 linear;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotation {
+  from {
+    background: url("images/headsp.png");
+    height: 10em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    transform: rotateY(0deg);
+    animation-timing-function: ease-in-out;
+
+  }
+  to {
+    background-image: url("images/tailsp.png");
+    transform: rotateY(359deg);
+    animation-timing-function: ease-in-out;
+
+  }
+}
+/*animation end*/
